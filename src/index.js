@@ -1,9 +1,19 @@
 const express = require("express");
 const app = express();
 
-const port = 3000;
+const port = 8000;
 
-app.get("/", (req,res)=>{
+app.use(express.json())
+
+
+app.post("/users/", (req,res)=>{
+    /*
+    { search: 'Alison' }
+    req.query
+
+
+    */
+    console.log(req.body);
     res.json({
         message: "Hello Omnistack"
     });

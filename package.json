@@ -4,12 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "node src/"
+    "dev": "nodemon src/"
   },
   "description": "Back End da semana Omnistack 10",
   "author": "Alison Vieira",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.8.7"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
