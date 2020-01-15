@@ -1,0 +1,11 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "Back End da semana Omnistack 10",
+  "author": "Alison Vieira",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
