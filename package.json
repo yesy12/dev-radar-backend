@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/"
+    "dev": "nodemon src/index.js"
   },
   "description": "Back End da semana Omnistack 10",
   "author": "Alison Vieira",
