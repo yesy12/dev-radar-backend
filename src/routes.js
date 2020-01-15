@@ -1,16 +1,14 @@
 const { Router } =  require("express");
+const axios = require("axios");
 
 const routes = Router();
 
-routes.post("/users/", (req,res)=>{
-    /*
-    { search: 'Alison' }
-    req.query
+routes.post("/devs/", (req,res)=>{
+    const { github_username } = req.body;
 
 
-    */
-    console.log(req.body);
-    res.json({
+
+    return res.json({
         message: "Hello Omnistack"
     });
 })
