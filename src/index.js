@@ -1,10 +1,12 @@
-const express = require("expres");
+const express = require("express");
 const app = express();
 
 const port = 3000;
 
 app.get("/", (req,res)=>{
-    res.send("ok");
+    res.json({
+        message: "Hello Omnistack"
+    });
 })
 
 app.listen(port,()=>{
