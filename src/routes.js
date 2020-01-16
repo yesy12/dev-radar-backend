@@ -9,12 +9,12 @@ routes.post("/devs/", async (req,res)=>{
 
     const usuarioExiste = await Dev.findOne({github_username})
 
-    if(usuarioExiste){
-        return res.json({
-            "error" : "Dev já esta cadastrado"
-        })
-    }
-    else{
+    // if(usuarioExiste){
+    //     return res.json({
+    //         "error" : "Dev já esta cadastrado"
+    //     })
+    // }
+    // else{
 
         const link = `https://api.github.com/users/${github_username}`;
         const response = await axios.get(link);
@@ -32,7 +32,7 @@ routes.post("/devs/", async (req,res)=>{
         })
     
         return res.json(dev);
-    }
+    // }
 })
 
 module.exports = routes;

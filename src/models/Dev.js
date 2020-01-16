@@ -4,7 +4,7 @@ const DevSchema = new mongoose.Schema({
     name: String,
     github_username: {
         type: String,
-        unique: true
+        unique: false
     },
     bio: String,
     avatar_url: String,
