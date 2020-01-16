@@ -1,5 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require("cors");
+
 const app = express();
 
 const routes = require("./routes");
@@ -21,6 +23,7 @@ mongoose.connect(link,{
     console.log(`Error on mongodb: ${error}`)
 })
 
+app.use(cors())
 app.use(express.json())
 app.use("/",routes);
 
