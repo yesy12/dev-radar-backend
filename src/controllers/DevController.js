@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-const Dev = require("./models/Dev");
+const Dev = require("../models/Dev");
 
 module.exports = {
     async store(req,res){
@@ -9,9 +9,7 @@ module.exports = {
         const usuarioExiste = await Dev.findOne({github_username})
     
         if(usuarioExiste){
-            return res.json({
-                "error" : "Dev já esta cadastrado"
-            })
+            return res.json(usuarioExiste);
         }
         else{
     
