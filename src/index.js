@@ -7,7 +7,7 @@ const port = 8000;
 
 const username = "omnistack";
 const password = "Ei1p07ZDM5hDM7Q7";
-const db = "omnistack10";
+const db = "teste";
 var link = `mongodb+srv://${username}:${password}@cluster0-nth3w.mongodb.net/db?retryWrites=true&w=majority`
 
 mongoose.connect(link,{ 
