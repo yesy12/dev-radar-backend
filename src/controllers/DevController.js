@@ -1,3 +1,7 @@
+const axios = require("axios");
+
+const Dev = require("./models/Dev");
+
 module.exports = {
     async store(req,res){
         const { github_username,techs, latitude, longitude } = req.body;
