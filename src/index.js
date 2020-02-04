@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 
 const routes = require("./routes");
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 const username = "omnistack";
 const password = "Ei1p07ZDM5hDM7Q7";
